@@ -71,6 +71,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   cf.policy_server_address = "10.0.2.15"
   # end
 
+  config.vm.provision :shell, :path => "puppet/shell/main.sh"
+  
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
   # You will need to create the manifests directory and a manifest in
