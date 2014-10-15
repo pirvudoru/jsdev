@@ -81,7 +81,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file  = "js_env.pp"
-	puppet.modules_path = "puppet/modules"
+	puppet.module_path = "puppet/modules"
 	puppet.options = "--verbose --trace --debug"
   end
 
